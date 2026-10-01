@@ -1,0 +1,42 @@
+JOB DESCRIPTION
+
+Company: Northstar AI Solutions (Fictional Demo Company)
+Role: Junior Machine Learning Engineer
+
+Role Summary:
+Northstar AI Solutions is looking for a Junior Machine Learning Engineer to build data-driven solutions and support production analytics projects.
+
+Required Skills:
+- Python programming
+- SQL and relational databases
+- Machine Learning fundamentals
+- Git and version control
+- Pandas and scikit-learn
+
+Education:
+- Bachelor's degree in Computer Science, Data Science, Statistics, Engineering, or a related field
+
+Experience:
+- 2+ years of professional or project experience in software development, data analysis, or machine learning
+
+Responsibilities:
+- Prepare and analyze structured datasets
+- Build and evaluate machine learning models
+- Write SQL queries for data extraction and reporting
+- Develop maintainable Python code
+- Collaborate using Git-based workflows
+- Document experiments, results, and technical decisions
+
+Screening Weights:
+- Required technical skills: 60 points
+- Education: 15 points
+- Experience: 15 points
+- Supporting tools and practices: 10 points
+
+Decision Thresholds:
+- 75-100: Shortlist
+- 50-74: Human Review
+- 0-49: Not Shortlisted
+
+Note:
+This is a fictional job description for a portfolio demonstration. No real company or candidate data is used.

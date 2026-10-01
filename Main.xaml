@@ -1,0 +1,263 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:excel="clr-namespace:UiPath.Excel.Activities;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="897.2,536.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="jobDescriptionText" />
+      <Variable x:TypeArguments="sd:DataTable" Name="resultsTable" />
+      <Variable x:TypeArguments="x:String" Name="reportPath" Default="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;outputs&quot;, &quot;CandidateScreeningReport.xlsx&quot;)]" />
+      <Variable x:TypeArguments="x:String" Name="notificationPath" Default="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;outputs&quot;, &quot;HR_Notification_Draft.txt&quot;)]" />
+      <Variable x:TypeArguments="x:String" Name="notificationText" />
+      <Variable x:TypeArguments="x:Int32" Name="shortlistCount" />
+      <Variable x:TypeArguments="x:Int32" Name="reviewCount" />
+      <Variable x:TypeArguments="x:Int32" Name="notShortlistedCount" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeCode DisplayName="Initialize Results Table" Code="If resultsTable Is Nothing Then&#xA;  resultsTable = New System.Data.DataTable()&#xA;  resultsTable.Columns.Add(&quot;Candidate&quot;, GetType(String))&#xA;  resultsTable.Columns.Add(&quot;Matched Skills&quot;, GetType(String))&#xA;  resultsTable.Columns.Add(&quot;Score&quot;, GetType(Integer))&#xA;  resultsTable.Columns.Add(&quot;Decision&quot;, GetType(String))&#xA;End If">
+      <ui:InvokeCode.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument">
+          <InOutArgument x:TypeArguments="sd:DataTable" x:Key="resultsTable">[resultsTable]</InOutArgument>
+        </scg:Dictionary>
+      </ui:InvokeCode.Arguments>
+    </ui:InvokeCode>
+    <ui:ReadTextFile DisplayName="Load Job Description" FileName="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;JobDescription.txt&quot;)]" sap:VirtualizedContainerService.HintSize="416,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" Content="[jobDescriptionText]" />
+    <ui:LogMessage DisplayName="Log Requirements Loaded" sap:VirtualizedContainerService.HintSize="416,112" sap2010:WorkflowViewState.IdRef="LogMessage_Requirements" Message="[&quot;Loaded job requirements from JobDescription.txt&quot;]" />
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[System.IO.Path.Combine(Environment.currentDirectory, &quot;resumes&quot;)]" sap:VirtualizedContainerService.HintSize="451.2,513.6" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+      <ui:ForEachFileX.Body>
+        <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+          </ActivityAction.Argument2>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,640.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="resumeText" />
+              <Variable x:TypeArguments="x:Int32" Name="score" />
+              <Variable x:TypeArguments="x:String" Name="matchedSkills" />
+              <Variable x:TypeArguments="x:String" Name="decision" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="416,115.2" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[resumeText]" />
+            <ui:InvokeCode DisplayName="Score Candidate" Code="Dim normalized As String = If(resumeText, String.Empty).ToLowerInvariant()&#xA;Dim requirements As String = If(jobDescriptionText, String.Empty).ToLowerInvariant()&#xA;Dim points As Integer = 0&#xA;Dim matched As New System.Collections.Generic.List(Of String)()&#xA;If requirements.Contains(&quot;python&quot;) AndAlso normalized.Contains(&quot;python&quot;) Then&#xA;  points = points + 20&#xA;  matched.Add(&quot;Python&quot;)&#xA;End If&#xA;If requirements.Contains(&quot;sql&quot;) AndAlso normalized.Contains(&quot;sql&quot;) Then&#xA;  points = points + 15&#xA;  matched.Add(&quot;SQL&quot;)&#xA;End If&#xA;If (requirements.Contains(&quot;machine learning&quot;) OrElse requirements.Contains(&quot;scikit-learn&quot;)) AndAlso (normalized.Contains(&quot;machine learning&quot;) OrElse normalized.Contains(&quot;scikit-learn&quot;)) Then&#xA;  points = points + 15&#xA;  matched.Add(&quot;Machine Learning&quot;)&#xA;End If&#xA;If (requirements.Contains(&quot;git&quot;) OrElse requirements.Contains(&quot;version control&quot;)) AndAlso (normalized.Contains(&quot;git&quot;) OrElse normalized.Contains(&quot;version control&quot;)) Then&#xA;  points = points + 10&#xA;  matched.Add(&quot;Git&quot;)&#xA;End If&#xA;If (requirements.Contains(&quot;pandas&quot;) OrElse requirements.Contains(&quot;scikit-learn&quot;)) AndAlso (normalized.Contains(&quot;pandas&quot;) OrElse normalized.Contains(&quot;scikit-learn&quot;)) Then&#xA;  points = points + 10&#xA;  matched.Add(&quot;Supporting Tools&quot;)&#xA;End If&#xA;If (requirements.Contains(&quot;bachelor&quot;) OrElse requirements.Contains(&quot;computer science&quot;) OrElse requirements.Contains(&quot;data science&quot;)) AndAlso (normalized.Contains(&quot;bachelor&quot;) OrElse normalized.Contains(&quot;computer science&quot;) OrElse normalized.Contains(&quot;data science&quot;)) Then&#xA;  points = points + 15&#xA;  matched.Add(&quot;Education&quot;)&#xA;End If&#xA;If (requirements.Contains(&quot;2+&quot;) OrElse requirements.Contains(&quot;2 years&quot;)) AndAlso (normalized.Contains(&quot;2 years&quot;) OrElse normalized.Contains(&quot;3 years&quot;) OrElse normalized.Contains(&quot;4 years&quot;) OrElse normalized.Contains(&quot;5 years&quot;)) Then&#xA;  points = points + 15&#xA;  matched.Add(&quot;Experience&quot;)&#xA;End If&#xA;score = points&#xA;matchedSkills = String.Join(&quot;, &quot;, matched)&#xA;decision = If(points &gt;= 75, &quot;Shortlist&quot;, If(points &gt;= 50, &quot;Human Review&quot;, &quot;Not Shortlisted&quot;))">
+              <ui:InvokeCode.Arguments>
+                <scg:Dictionary x:TypeArguments="x:String, Argument">
+                  <InArgument x:TypeArguments="x:String" x:Key="resumeText">[resumeText]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="jobDescriptionText">[jobDescriptionText]</InArgument>
+                  <OutArgument x:TypeArguments="x:Int32" x:Key="score">[score]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="matchedSkills">[matchedSkills]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="decision">[decision]</OutArgument>
+                </scg:Dictionary>
+              </ui:InvokeCode.Arguments>
+            </ui:InvokeCode>
+            <ui:InvokeCode DisplayName="Append Candidate Result" Code="resultsTable.Rows.Add(New Object() {candidateName, matchedSkills, score, decision})">
+              <ui:InvokeCode.Arguments>
+                <scg:Dictionary x:TypeArguments="x:String, Argument">
+                  <InOutArgument x:TypeArguments="sd:DataTable" x:Key="resultsTable">[resultsTable]</InOutArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="candidateName">[CurrentFile.Name]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="matchedSkills">[matchedSkills]</InArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="score">[score]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="decision">[decision]</InArgument>
+                </scg:Dictionary>
+              </ui:InvokeCode.Arguments>
+            </ui:InvokeCode>
+            <ui:LogMessage DisplayName="Log Screening Decision" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_Screening" Message="[CurrentFile.Name &amp; &quot; | Score: &quot; &amp; score.ToString() &amp; &quot; | Decision: &quot; &amp; decision &amp; &quot; | Matches: &quot; &amp; matchedSkills]" />
+            <If DisplayName="Count Decision">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">[decision = &quot;Shortlist&quot;]</InArgument>
+              </If.Condition>
+              <If.Then>
+                <Sequence DisplayName="Count Shortlist">
+                  <Assign DisplayName="Increment Shortlist Count">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[shortlistCount]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[shortlistCount + 1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Count Review Or Rejection">
+                  <If DisplayName="Count Human Review">
+                    <If.Condition>
+                      <InArgument x:TypeArguments="x:Boolean">[decision = &quot;Human Review&quot;]</InArgument>
+                    </If.Condition>
+                    <If.Then>
+                      <Sequence DisplayName="Count Review">
+                        <Assign DisplayName="Increment Review Count">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[reviewCount]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[reviewCount + 1]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Count Not Shortlisted">
+                        <Assign DisplayName="Increment Not Shortlisted Count">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[notShortlistedCount]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[notShortlistedCount + 1]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If DisplayName="Route Candidate Copy">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">[decision = &quot;Shortlist&quot;]</InArgument>
+              </If.Condition>
+              <If.Then>
+                <Sequence DisplayName="Copy To Shortlisted">
+                  <ui:CreateDirectory DisplayName="Create Shortlisted Folder" Path="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;outputs&quot;, &quot;classified&quot;, &quot;shortlisted&quot;)]" />
+                  <ui:CopyFile DisplayName="Copy Shortlisted Resume" Path="[CurrentFile.FullName]" Destination="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;outputs&quot;, &quot;classified&quot;, &quot;shortlisted&quot;, CurrentFile.Name)]" Overwrite="True" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Route Review Or Rejection">
+                  <If DisplayName="Route Human Review Copy">
+                    <If.Condition>
+                      <InArgument x:TypeArguments="x:Boolean">[decision = &quot;Human Review&quot;]</InArgument>
+                    </If.Condition>
+                    <If.Then>
+                      <Sequence DisplayName="Copy To Human Review">
+                        <ui:CreateDirectory DisplayName="Create Human Review Folder" Path="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;outputs&quot;, &quot;classified&quot;, &quot;human-review&quot;)]" />
+                        <ui:CopyFile DisplayName="Copy Human Review Resume" Path="[CurrentFile.FullName]" Destination="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;outputs&quot;, &quot;classified&quot;, &quot;human-review&quot;, CurrentFile.Name)]" Overwrite="True" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Copy To Not Shortlisted">
+                        <ui:CreateDirectory DisplayName="Create Not Shortlisted Folder" Path="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;outputs&quot;, &quot;classified&quot;, &quot;not-shortlisted&quot;)]" />
+                        <ui:CopyFile DisplayName="Copy Not Shortlisted Resume" Path="[CurrentFile.FullName]" Destination="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;outputs&quot;, &quot;classified&quot;, &quot;not-shortlisted&quot;, CurrentFile.Name)]" Overwrite="True" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachFileX.Body>
+    </ui:ForEachFileX>
+    <ui:CreateDirectory DisplayName="Create Outputs Folder" Path="[System.IO.Path.Combine(Environment.CurrentDirectory, &quot;outputs&quot;)]" />
+    <excel:CreateNewWorkbook DisplayName="Create Candidate Report" WorkbookPath="[reportPath]" SheetName="[&quot;Candidate Results&quot;]" ConflictResolution="Replace" />
+    <excel:WriteRange DisplayName="Write Candidate Report" WorkbookPath="[reportPath]" SheetName="[&quot;Candidate Results&quot;]" StartingCell="[&quot;A1&quot;]" DataTable="[resultsTable]" AddHeaders="True" />
+    <excel:SetRangeColor DisplayName="Style Report Header" WorkbookPath="[reportPath]" SheetName="[&quot;Candidate Results&quot;]" Range="[&quot;A1:D1&quot;]" Color="[System.Drawing.Color.FromArgb(31, 78, 121)]" />
+    <ui:InvokeCode DisplayName="Build HR Notification Draft" Code="notificationText = &quot;HR SCREENING SUMMARY&quot; &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;Run date: &quot; &amp; DateTime.Now.ToString(&quot;yyyy-MM-dd HH:mm&quot;) &amp; Environment.NewLine &amp; &quot;Role: Junior Machine Learning Engineer&quot; &amp; Environment.NewLine &amp; &quot;Fictional demo data only&quot; &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;Candidates processed: &quot; &amp; resultsTable.Rows.Count.ToString() &amp; Environment.NewLine &amp; &quot;Shortlist: &quot; &amp; shortlistCount.ToString() &amp; Environment.NewLine &amp; &quot;Human Review: &quot; &amp; reviewCount.ToString() &amp; Environment.NewLine &amp; &quot;Not Shortlisted: &quot; &amp; notShortlistedCount.ToString() &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;Detailed report: &quot; &amp; reportPath &amp; Environment.NewLine &amp; &quot;Candidate copies: &quot; &amp; System.IO.Path.Combine(Environment.CurrentDirectory, &quot;outputs&quot;, &quot;classified&quot;) &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;This is a notification draft for HR review. No email was sent automatically.&quot;">
+      <ui:InvokeCode.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument">
+          <InArgument x:TypeArguments="sd:DataTable" x:Key="resultsTable">[resultsTable]</InArgument>
+          <InArgument x:TypeArguments="x:Int32" x:Key="shortlistCount">[shortlistCount]</InArgument>
+          <InArgument x:TypeArguments="x:Int32" x:Key="reviewCount">[reviewCount]</InArgument>
+          <InArgument x:TypeArguments="x:Int32" x:Key="notShortlistedCount">[notShortlistedCount]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="reportPath">[reportPath]</InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="notificationText">[notificationText]</OutArgument>
+        </scg:Dictionary>
+      </ui:InvokeCode.Arguments>
+    </ui:InvokeCode>
+    <ui:WriteTextFile DisplayName="Write HR Notification Draft" FileName="[notificationPath]" Text="[notificationText]" />
+    <ui:LogMessage DisplayName="Log HR Notification Draft" Message="[&quot;HR notification draft created: &quot; &amp; notificationPath]" />
+  </Sequence>
+</Activity>

@@ -1,0 +1,6 @@
+{
+  "Name": "ResumeScreeningAutomation",
+  "ProjectType": "Process",
+  "Description": "AI-powered resume screening, candidate matching, scoring, reporting, and HR notification automation.",
+  "MainFile": "Main.xaml"
+}
