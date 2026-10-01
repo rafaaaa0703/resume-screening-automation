@@ -57,16 +57,3 @@ resume-screening-automation/
 ├── outputs/
 └── resumes/
 
-
-Future Improvements
-AI-based resume ranking
-Natural Language Processing (NLP)
-Support for additional resume formats
-Automated email notifications
-Recruiter dashboard
-Integration with recruitment platforms
-Author
-
-Rafa P
-
-B.Tech Artificial Intelligence and Data Science Student
