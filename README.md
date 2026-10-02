@@ -57,3 +57,12 @@ resume-screening-automation/
 ├── outputs/
 └── resumes/
 
+## Workflow
+
+### Main Workflow
+
+![Main Workflow](workflow.png)
+
+### Reporting and Notification
+
+![Reporting and Notification](report-and-notification.png)
